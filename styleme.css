@@ -1,8 +1,8 @@
-#primary_header {
+.primary_header {
   color: blue;
   font-family: "Arial Black";
 }
-#secondary_header {
+.secondary_header {
   color: red;
   font-family: "Arial Black";
 }
