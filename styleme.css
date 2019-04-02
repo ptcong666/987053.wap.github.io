@@ -15,3 +15,12 @@ span.emp {
   font-weight: bold;
   color: green;
 }
+
+a {
+  color: pink;
+  text-decoration: none;
+}
+
+a:hover {
+  color: brown;
+}
