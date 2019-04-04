@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+h1 {
+    padding: 10px;
+    margin: 0px;
+}
+
+span {
+    margin: 10px;
+}
+.header {
+    background-color: rgb(105, 209, 212);
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* The navbar container */
+
+.topnav {
+    overflow: hidden;
+    background-color: rgb(5, 39, 39);
+}
+
+/* Navbar links */
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-right: 2px solid black;
+}
+
+/* Links - change color on hover */
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.column {
+    float: left;
+    padding-bottom: 200px;
+}
+
+/* Left and right column */
+
+.column.left {
+    width: 25%;
+    background-color: rgb(65, 63, 63);
+}
+
+.column.right {
+    width: 25%;
+    background-color: rgb(185, 184, 184);
+}
+
+/* Middle column */
+
+.column.middle {
+    width: 50%;
+    background-color: rgb(121, 118, 118);
+}
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .column.left {
+        width: 50%;
+    }
+    .column.right {
+        width: 50%;
+    }
+    .column.middle {
+        width: 200%;
+    }
+    .row> :nth-child(1) {
+        order: 1;
+    }
+    .row> :nth-child(3) {
+        order: 2;
+    }
+    .row> :nth-child(2) {
+        order: 3;
+    }
+}
+
+.footer {
+    background-color: rgb(5, 39, 39);
+    text-align: center;
+    padding: 10px;
+    color: #ddd;
+}
