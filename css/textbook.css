@@ -1,0 +1,21 @@
+div {
+	margin-bottom: 10px;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+}
+
+th {
+  color: white;
+  background: blue;
+  width: 30%;
+}
+
+.primary-button {
+  color: white;
+  background: blue;
+  box-shadow: none;
+  border: 0;
+}
