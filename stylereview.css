@@ -1,1 +1,140 @@
 
+.banner {
+    background-image: url("images/bannerbg.png");
+    padding: 0px;
+    margin: 0px;
+    height: 50px;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    background-image: url("images/background.png")
+}
+
+.content {
+    text-align: center;
+}
+
+.review {
+    width: 800px;
+    border: 4px solid gray;
+    margin: auto;
+    border-radius: 20px;
+    background:#A2B964;
+}
+.rotten {
+    background-image: url("images/rbg.png");
+    padding: 0px;
+    margin: 0px;
+    height: 83px;
+    border-radius: 20px 0px 0px 0px;
+}
+.rottenlogo {
+    float: left;
+    border-radius: 20px 0px 0px 0px;
+}
+
+.rotten33text {
+    float: left;
+    text-align: center;
+    margin-top: auto;
+    margin-left: 10px;
+    font: 48pt bold red;
+    color: red;
+}
+
+.quote {
+    font: 8pt bold;
+    background-color: #E8DC9B;
+    border: 2px solid gray;
+    border-radius: 10px;
+    margin: 8px;
+    text-align: left;
+}
+
+.reviewerName {
+    font: 8pt italic;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.reviewerIcon {
+    float: left;
+    margin-right: 5px;
+    margin-left: 8px;
+}
+
+.moviveImage {
+    border-radius: 0px 20px 0px 0px;
+}
+
+h1 {
+    font: bold 24pt;
+}
+
+dt {
+    font-weight: bold;
+    padding-left: 10px;
+    padding-top:10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Left column */
+.leftcolumn {   
+    float: left;
+    width: 550px;
+    background-image: url("images/background.png");
+    border-radius: 20px 0px 0px 0px;
+  }
+  
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 250px;
+    font: 8pt arial;
+    background-color: #A2B964;
+    border-radius: 0px 20px 0px 0px;
+    text-align: left;
+}
+ 
+.column {
+    float: left;
+    padding: 0px;
+  }
+  
+  /* Left and right column */
+  .column.side {
+    width: 50%;
+  }
+  
+  /* Middle column */
+  /* .column.middle {
+    width: 2%;
+  } */
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.footer {
+    padding: 0px;
+    text-align: center;
+    border-radius: 20px;
+    font: 8pt bold;
+}
+
+.validator {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+  }
+
