@@ -11,7 +11,7 @@
     	<label>Task <input placeholder="Task name" name="task"/></label>
         </div>
         <div>
-    <label>Required By <input type="date" name="requiredby"/></label>
+    <label>Required By <input type="date" id="requiredby" name="requiredby"/></label>
     </div>
     <div>
     <label> Category
@@ -53,7 +53,7 @@
 		<a href="https://jigsaw.w3.org/css-validator/check/referer"><img src="css/images/w3c-css.png" alt="Valid CSS" /></a>
 	</div>
 	  <script>
-		  if ( $('#test')[0].type != 'date' ) $('#test').datepicker();
+		  if ( $('#requiredby')[0].type != 'date' ) $('#requiredby').datepicker();
 	  </script>
   </body>
 </html>
