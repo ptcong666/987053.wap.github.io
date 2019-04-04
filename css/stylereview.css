@@ -1,6 +1,6 @@
 
 .banner {
-    background-image: url("/images/bannerbg.png");
+    background-image: url("images/bannerbg.png");
     padding: 0px;
     margin: 0px;
     height: 50px;
@@ -9,7 +9,7 @@
 body {
     padding: 0px;
     margin: 0px;
-    background-image: url("/images/background.png")
+    background-image: url("images/background.png")
 }
 
 .content {
@@ -24,7 +24,7 @@ body {
     background:#A2B964;
 }
 .rotten {
-    background-image: url("/images/rbg.png");
+    background-image: url("images/rbg.png");
     padding: 0px;
     margin: 0px;
     height: 83px;
@@ -86,13 +86,13 @@ ul {
 }
 
 /* Left column */
-.leftcolumn {   
+.leftcolumn {
     float: left;
     width: 550px;
-    background-image: url("/images/background.png");
+    background-image: url("images/background.png");
     border-radius: 20px 0px 0px 0px;
   }
-  
+
 /* Right column */
 .rightcolumn {
     float: left;
@@ -102,22 +102,22 @@ ul {
     border-radius: 0px 20px 0px 0px;
     text-align: left;
 }
- 
+
 .column {
     float: left;
     padding: 0px;
   }
-  
+
   /* Left and right column */
   .column.side {
     width: 50%;
   }
-  
+
   /* Middle column */
   /* .column.middle {
     width: 2%;
   } */
-  
+
   /* Clear floats after the columns */
   .row:after {
     content: "";
@@ -137,4 +137,3 @@ ul {
     bottom: 0;
     right: 0;
   }
-
