@@ -15,7 +15,16 @@
             }
             ;
         }
-
+        
+        function myFunctionTest2(expected, function2test) {
+            if (expected.join() === function2test().join()) {
+                return "TEST SUCCEEDED";
+            } else {
+                return "TEST FAILED.  Expected " + expected + " found " + function2test();
+            }
+            ;
+        }
+        
         /* max returns the maximum of 2 arguments */
         function max(a, b) {
             if (a > b) {
