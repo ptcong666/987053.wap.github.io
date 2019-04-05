@@ -48,7 +48,7 @@
         //6.
         function reverse(string) {
           if(!string) return "";
-          return string.reverse();
+          return string.split("").reverse().join("");
         }
         console.log("Expected output of reverse('jag testar') is 'ratset gaj'" + myFunctionTest('ratset gaj', function () {
             return reverse('jag testar');
