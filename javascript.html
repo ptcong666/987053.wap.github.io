@@ -50,7 +50,7 @@
           if(!string) return "";
           return string.split("").reverse().join("");
         }
-        console.log("Expected output of reverse('jag testar') is 'ratset gaj'" + myFunctionTest('ratset gaj', function () {
+        console.log("Expected output of reverse('jag testar') is 'ratset gaj' " + myFunctionTest('ratset gaj', function () {
             return reverse('jag testar');
         }));
         
@@ -58,12 +58,12 @@
         function findLongestWord(array) {
           let max = 0;
           for (let i = 0; i < array.length; i++) {
-             max = max > array[i].length ? array[i].length : max;
+             max = max < array[i].length ? array[i].length : max;
           }
           return max;
         }
-        console.log("Expected output of findLongestWord(['jag testar', 'jag','jag test']) is 10" + myFunctionTest(10, function () {
-            return findLongestWord(['jag testar', 'jag','jag test']);
+        console.log("Expected output of findLongestWord(['jag testar', 'jag','jag test']) is 10 " + myFunctionTest(10, function () {
+            return findLongestWord(['jag testar', 'jag', 'jag test']);
         }));
         
         //8.
@@ -74,7 +74,7 @@
           }
           return res;
         }
-        console.log("Expected output of filterLongWords(['jag testar', 'jag','jag test'], 5) is ['jag testar','jag test']" + myFunctionTest('jag testar, jag test', function () {
+        console.log("Expected output of filterLongWords(['jag testar', 'jag','jag test'], 5) is ['jag testar','jag test'] " + myFunctionTest('jag testar, jag test', function () {
             return filterLongWords(['jag testar', 'jag','jag test'], 5);
         }));
     </script>
