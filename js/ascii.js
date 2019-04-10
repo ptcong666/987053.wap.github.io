@@ -19,7 +19,7 @@
     };
 
     size.onchange = function () {
-        textarea.style.fontSize = document.getElementById("fontsize").value;
+        textarea.style.fontSize = size.value;
     };
 
     speed_selector.onchange = function () {
