@@ -143,10 +143,11 @@
         }));
         //remove string
         String.prototype.filter = function (str) {
-            for (let s : str) {
-                this = this.replace(s, "");
-            }
-            return this.toString();
+		let res = this.toString();
+		for (s of str) {
+			res = res.replace(s, "");
+		}
+		return res.toString().trim();
         };
         console.log("This house is not nice!".filter(['not']));
         //bubble sort
