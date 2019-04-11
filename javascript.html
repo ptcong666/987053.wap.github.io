@@ -172,7 +172,7 @@
             console.log(this.name + " is now teaching " + subject);
         }
         let Teacher = new Person("Anderson");
-        Teacher.teach();
+        Teacher.teach("Math");
         
         const person = {
           teach: function (subject) {
@@ -181,11 +181,11 @@
         };
         const teacher = Object.create(person);
         teacher.name = "Matthew";
-        teacher.teach();
+        teacher.teach("Math");
         
         //Ex 4
         const personn = {
-            name: "",
+            name: "Cong",
             age: "",
             greeting: function () {
                 console.log("My name is " + this.name + " and I'm " + this.age + " years old");
@@ -197,7 +197,7 @@
         
         const student = Object.create(personn);
         student.major = "Math";
-        professor.greeting = function () {
+        student.greeting = function () {
             console.log("Hey, my name is " + this.name + " and I am studying " + this.major);
         }
         student.salute();
