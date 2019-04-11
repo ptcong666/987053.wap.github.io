@@ -141,7 +141,74 @@
         console.log("Expected output of d is 135 " + myFunctionTest(135 , function () {
             return d;
         }));
+        //remove string
+        String.prototype.filter = function (str) {
+            for (let s : str) {
+                this = this.replace(s, "");
+            }
+            return this.toString();
+        };
+        console.log("This house is not nice!".filter(['not']));
+        //bubble sort
+        Array.prototype.bubbleSort = function () {
+            for (let i = 0; i < this.length; i++) {
+                for (let j = 0; j < this.length; j++) {
+                    if (this[i] < this[j]) {
+                        let tmp = this[i];
+						this[i] = this[j];
+						this[j] = tmp;
+                    }
+                }
+            }
+            return this;
+        };
+        [6,4,0, 3,-2,1].bubbleSort();
+        //Ex 3
+        function Person = function (name) {
+            this.name = name;
+        }
+        Person.prototype.teach = function (subject) {
+            console.log(this.name + " is now teaching " + subject);
+        }
+        let Teacher = new Person("Anderson");
+        Teacher.teach();
         
+        const person = {
+          teach: function (subject) {
+            console.log(this.name + " is now teaching " + subject);
+          }
+        };
+        const teacher = Object.create(person);
+        teacher.name = "Matthew";
+        teacher.teach();
+        
+        //Ex 4
+        const personn = {
+            name: "",
+            age: "",
+            greeting: function () {
+                console.log("My name is " + this.name + " and I'm " + this.age + " years old");
+            },
+            salute: function () {
+                console.log("Good morning!, and in case I dont see you, good afternoon, good evening and good night!");
+            }
+        }
+        
+        const student = Object.create(personn);
+        student.major = "Math";
+        professor.greeting = function () {
+            console.log("Hey, my name is " + this.name + " and I am studying " + this.major);
+        }
+        student.salute();
+        student.greeting();
+        
+        const professor = Object.create(personn);
+        professor.department = "Math";
+        professor.salute = function () {
+            console.log("Good day, my name is " + this.name + " and I am in the " + this.department +" department");
+        }
+        professor.salute();
+        professor.greeting();
     </script>
 </head>
 <body>
